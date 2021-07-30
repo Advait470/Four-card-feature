@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+$Very-Dark-Blue: hsl(234, 12%, 34%);
+$Grayish-Blue: hsl(229, 6%, 66%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+body{
+    font-family: "Poppins",sans-serif;
+}
+
+h1{
+    color: $Very-Dark-Blue;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#p1{
+    text-align: center;
+    color: $Grayish-Blue;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 85%;
+    margin: 20px auto;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    width: 85%;
+    margin: 50px auto;
+    padding: 20px;
+    padding-bottom: 80px;
+    p{
+        font-size: .8rem;
+        color: $Grayish-Blue;
+        margin-bottom: 10%;
+    }
+}
+
+.hi{
+    margin-top: 20%;
+    font-weight: 200;
+}
+
+h2{
+    font-size: 1rem;
+    color: $Very-Dark-Blue;
+}
+
+img{
+    float: right;
+}
+
+.supervisor{
+    border-top: 3px solid $Cyan;
+    border-radius: 5px;
+}
+
+.team{
+    border-top: 3px solid $Red;
+    border-radius: 5px;
+}
+
+.karma{
+    border-top: 3px solid $Orange;
+    border-radius: 5px;
+}
+
+.calc{
+    border-top: 3px solid $Blue;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+    #p1{
+        width: 70%;
+    }
+
+    .hi{
+        margin-top: 5%;
+    }
+
+    .card{
+        width: 45%;
+        margin-bottom: 5%;
+        margin: 50px auto 0px;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1100px){
+
+    #p1{
+        width: 50%;
+    }
+
+    .card{
+        width: 30%;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .supervisor{
+        position: relative;
+        top: 150px;
+        left: 10px;
+    }
+
+    .karma{
+        position: relative;
+        top: 150px;
+        right: 10px;
+    }
+}
